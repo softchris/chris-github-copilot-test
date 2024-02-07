@@ -2,7 +2,10 @@
 
 app = Flask(__name__)
 
-# adding comment
+# define product route
+@app.route('/product', methods=['GET'])
+def get_product():
+    return 'Product'
 
 @app.route('/')
 def hello_world():
