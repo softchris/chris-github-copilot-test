@@ -5,7 +5,7 @@ app = Flask(__name__)
 # define product route
 @app.route('/product', methods=['GET'])
 def get_product():
-    return 'Product'
+    return ["product"]
 
 @app.route('/')
 def hello_world():
